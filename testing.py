@@ -46,7 +46,7 @@ with tf.Session() as sess:
         
         # Convert image to float32 and resize to (227x227)
         img = cv2.resize(image.astype(np.float32), (227,227))
-        
+
         # Subtract the ImageNet mean
         img -= imagenet_mean
         

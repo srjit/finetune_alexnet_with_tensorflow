@@ -84,6 +84,11 @@ class ImageDataGenerator(object):
 
         self.data = data
 
+    def next_batch(self, batch_size):
+        return self.data.batch(batch_size)
+    
+        
+
     def _read_txt_file(self):
         """Read the content of the text file and store it into lists."""
         self.img_paths = []
